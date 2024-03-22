@@ -15,7 +15,7 @@ func main() {
 	r.GET("/orders", order_controller.Index)
 	r.PUT("/order/:orderId", order_controller.Update)
 	r.DELETE("/order/:orderId", order_controller.Delete)
-	r.GET("/order/:orderID")
+	r.GET("/order/:orderId")
 
 	r.Run("localhost:5000")
 }
